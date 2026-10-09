@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="assets/css/tailwind.css"/>
+    <title>Weboldal</title>
+</head>
+<body>
+    <header>
+        <nav class="bg-[#262F50] p-4 sticky">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 href="#" class="text-white text-xl font-semibold">Akna kereső</h1>
+                <button id="login-button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer">Bejelentkezés</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="minesweeper">
+        <div>
+
+
+        </div>
+
+    </section>
+
+    <section class="leaderboard">
+        <div class="max-h-[400px] w-[80%] mx-auto mt-8 overflow-y-auto">
+            <table class="leaderboard-table w-full border-collapse border border-gray-300">
+                <thead class="sticky top-0 bg-gray-50 border-b border-gray-300">
+                    <tr>
+                        <th>Rang</th>
+                        <th>Felhasználó</th>
+                        <th>Pontszám</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="bg-[#262F50] p-4 mt-8">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Weboldal. Minden jog fenntartva.
+        </div>
+    </footer>
+    <script src="assets/js/leaderboard.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
